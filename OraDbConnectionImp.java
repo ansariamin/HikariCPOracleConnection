@@ -68,26 +68,6 @@ public class OraDbConnectionImp  {
     }
 
 
-//    public DataSource CreateDataSource() {
-//
-//
-//        final HikariDataSource ds = new HikariDataSource();
-//        ds.setMaximumPoolSize(100);
-//         ds.setAutoCommit(true);
-//        ds.setDriverClassName("oracle.jdbc.driver.OracleDriver");
-//        ds.setJdbcUrl(configData.getDbUrl());
-////        ds.addDataSourceProperty("serverName", "localhost");
-////        ds.addDataSourceProperty("port", "5432");
-////        ds.addDataSourceProperty("databaseName", "test");
-//        ds.addDataSourceProperty("user", configData.getDbUser());
-//        ds.addDataSourceProperty("password", AesCrypt.decrypt(configData.getDbPassword()));
-//
-//        return ds;
-//
-//
-//
-//
-//    }
 
 //    public Connection getConnection() throws Exception {
 //        Connection con = null;
@@ -97,7 +77,7 @@ public class OraDbConnectionImp  {
 //        } catch (SQLException e) {
 //            StringWriter stack = new StringWriter();
 //            e.printStackTrace(new PrintWriter(stack));
-//            LOGTOPUP.error(StartTopUp.class.getSimpleName() + stack);
+//            LOGT.error(StartTopUp.class.getSimpleName() + stack);
 //            throw new Exception("DB Connection Exception");
 //        }
 //        return con;
